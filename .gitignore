@@ -4,6 +4,10 @@
 # /Datasets/**/*.csv
 # /Datasets/**/*.jl
 
+# These too are too big
+/Datasets/CivilComments/data.csv
+/Datasets/MeToo/data.csv
+
 /Lexicon/venv/
 
 TODO.txt

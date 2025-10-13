@@ -1,0 +1,10 @@
+heretikes;protestants
+hipocrites;catholikes
+idolaters;catholikes
+papists;catholikes
+popelings;catholikes
+traitours;catholikes
+shavelings;monkes
+harlots;women
+strumpets;women
+whores;women

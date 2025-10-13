@@ -1,9 +1,0 @@
-# For now i will include datasets in the repo
-
-# /Datasets/**/*.tsv
-# /Datasets/**/*.csv
-# /Datasets/**/*.jl
-
-/Lexicon/venv/
-
-TODO.txt
