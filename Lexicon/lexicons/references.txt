@@ -1,4 +1,0 @@
-Harassment Lexicon - https://github.com/Mrezvan94/Harassment-Corpus (c' é il paper)
-expandedLexicon - https://github.com/uds-lsv/lexicon-of-abusive-words/tree/master (c' è il paper)
-google_profanity - https://github.com/RobertJGabriel/google-profanity-words-node-module/tree/master
-taboo_domains - https://aclanthology.org/2021.gwc-1.5.pdf
