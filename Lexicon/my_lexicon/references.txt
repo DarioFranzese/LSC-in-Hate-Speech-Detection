@@ -1,0 +1,15 @@
+Harassment Lexicon - https://github.com/Mrezvan94/Harassment-Corpus (c' é il paper)
+expandedLexicon - https://github.com/uds-lsv/lexicon-of-abusive-words/tree/master (c' è il paper)
+google_profanity - https://github.com/RobertJGabriel/google-profanity-words-node-module/tree/master
+taboo_domains - https://aclanthology.org/2021.gwc-1.5.pdf
+weaponized - https://github.com/Weaponized-Word/API-Documentation/tree/main
+HurtLex - https://github.com/valeriobasile/hurtlex
+badwords.txt - https://code.google.com/archive/p/badwordslist/downloads
+hatebase_lexicon.txt - hatebase.org
+wiktionary - https://en.wiktionary.org/wiki/Category:English_derogatory_terms
+wordnik_offensive - https://www.wordnik.com/lists/offensive
+
+Postprocessing: joining all lexicons removing duplicates (case unsensitive), kept word/expressions with
+more than two definitions provided by the Wiktionary API, result is stored at "full_hate_lexicon.txt".
+Removed plurals as well. Removed words which definitions were all negatively tagged. Removed words with 30+ definitions collected (except for drag)
+Next step is filtering again keeping only the words which plural meanings are not only hateful.
