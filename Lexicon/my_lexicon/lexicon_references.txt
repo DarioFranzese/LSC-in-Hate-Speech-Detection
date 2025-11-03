@@ -1,0 +1,25 @@
+Harassment Lexicon - https://github.com/Mrezvan94/Harassment-Corpus (c' é il paper)
+expandedLexicon - https://github.com/uds-lsv/lexicon-of-abusive-words/tree/master (c' è il paper)
+google_profanity - https://github.com/RobertJGabriel/google-profanity-words-node-module/tree/master
+taboo_domains - https://aclanthology.org/2021.gwc-1.5.pdf
+weaponized - https://github.com/Weaponized-Word/API-Documentation/tree/main
+HurtLex - https://github.com/valeriobasile/hurtlex
+badwords.txt - https://code.google.com/archive/p/badwordslist/downloads
+hatebase_lexicon.txt - hatebase.org
+wiktionary - https://en.wiktionary.org/wiki/Category:English_derogatory_terms
+wordnik_offensive - https://www.wordnik.com/lists/offensive
+
+Postprocessing: 
+- Joining all lexicons removing duplicates (case unsensitive), 
+- Words with more than two definitions provided by the Wiktionary
+- Singular only
+- Words with at least one tagged definition (according to Wiktionary)
+- Words with < 30 definitions (except for drag)
+
+At this point we have full_lexicon.json After that we applied the following filtering techniques:
+- " with at least one tagged and one non-tagged definition (according to Wiktionary)
+- 0-shot Classification using roberta-hate-speech-dynabench-r4-target using definitions only (examples showed too much bias)
+- 0-shot Classification using QWen3-4b-Instruct
+- " lenght > 3
+- Words that were present in American Stories
+- " with at least one 'offensive' or 'derogatory' definition

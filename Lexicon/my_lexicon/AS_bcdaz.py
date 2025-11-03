@@ -25,9 +25,9 @@ def preprocess_dataset(dataset: Dataset) -> Dataset:
                 ]
             },
 
-        num_proc = 64,
+        num_proc = 128,
         batched = True,
-        batch_size = 2000
+        batch_size = 4000
     )
 
     return dataset
@@ -36,7 +36,7 @@ def preprocess_dataset(dataset: Dataset) -> Dataset:
 def save_dataset(dataset: Dataset):
     #repo = '/home/users/industry/cnrsatcreate/farahben/scratch/mydatasets/FilteredAmericanStories'
     repo = '/home/users/industry/cnrsatcreate/farahben/scratch/mydatasets/LAS'
-    num_shards = 160
+    num_shards = 50
 
     for i in range(num_shards):
         shard = dataset.shard(index=i, num_shards=num_shards, contiguous=True)
@@ -98,7 +98,7 @@ if __name__ == "__main__":
         get_context, # mapping function
         batched=True,
         batch_size=2000,
-        num_proc=64,
+        num_proc=128,
         remove_columns=dataset.column_names # lascia solo quelle nuove
     )
 
