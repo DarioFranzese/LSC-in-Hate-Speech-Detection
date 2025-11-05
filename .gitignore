@@ -3,10 +3,12 @@
 # /Datasets/**/*.tsv
 # /Datasets/**/*.csv
 # /Datasets/**/*.jl
+/Datasets/*.tar.gz
 
 # These too are too big
 /Datasets/CivilComments/data.csv
 /Datasets/MeToo/data.csv
+/Datasets/mydatasets/*
 
 /Lexicon/venv/
 

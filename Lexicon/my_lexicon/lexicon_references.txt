@@ -23,3 +23,6 @@ At this point we have full_lexicon.json After that we applied the following filt
 - " lenght > 3
 - Words that were present in American Stories
 - " with at least one 'offensive' or 'derogatory' definition
+
+LND_lexicon: words that are present at least 2 times in American Stories (in the final lexicon it will be applied to American Stories to, that's to ensure a good comparison of embeddings and
+also a reasonable amount of data in the final datasets if words are kept)
