@@ -26,3 +26,4 @@ At this point we have full_lexicon.json After that we applied the following filt
 
 LND_lexicon: words that are present at least 2 times in American Stories (in the final lexicon it will be applied to American Stories to, that's to ensure a good comparison of embeddings and
 also a reasonable amount of data in the final datasets if words are kept)
+apriori_lexicon: given LND_lexicon, words that are present at least 2 times in AS minus some extras (based on countings in LAS and meanings): frank, political

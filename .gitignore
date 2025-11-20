@@ -4,6 +4,9 @@
 # /Datasets/**/*.csv
 # /Datasets/**/*.jl
 /Datasets/*.tar.gz
+/Final/myembeddings/*
+/Final/mydatasets/*
+/Final/*.tar.gz
 
 # These too are too big
 /Datasets/CivilComments/data.csv
